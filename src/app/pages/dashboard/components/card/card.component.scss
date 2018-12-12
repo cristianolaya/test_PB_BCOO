@@ -1,0 +1,58 @@
+.card {
+  margin-bottom: 5px;
+  border-radius: 8px;
+  border-color: #979797;
+  border-width: 2px;
+
+  .card-body {
+    padding: 10px 15px;
+    position: relative;
+
+    .tc-type {
+      position: absolute;
+      top: 0px;
+      right: 20px;
+      font-size: 38px;
+      color: #d8d8d8;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: -0.2px;
+      color: #4a4a4a;
+      margin-bottom: 8px;
+    }
+
+    .card-subtitle {
+      font-size: 10px;
+      letter-spacing: -0.1px;
+      color: #9b9b9b;
+    }
+
+    .price {
+      margin-top: 20px;
+      position: relative;
+      bottom: 0px;
+
+      .title {
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: -0.1px;
+        color: #9b9b9b;
+      }
+
+      .amount {
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: -0.3px;
+        color: #4a4a4a;
+
+        span {
+          font-size: 16px;
+        }
+      }
+
+    }
+  }
+}

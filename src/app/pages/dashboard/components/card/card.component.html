@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">{{product.name}}</div>
+        <div class="card-subtitle">No. {{product.numero}}</div>
+        <div class="tc-type" *ngIf="type === 'tc'">
+            <i class="fab fa-cc-{{product.type}}"></i>
+            <!-- <i class="fab fa-cc-visa"></i> -->
+        </div>
+        <div class="card-text">
+        <div class="price text-right">
+            <div class="title" *ngIf="type !== 'cuenta'">Pago total</div>
+            <div class="amount">{{product.amount  | currency}}</div>
+        </div>
+        </div>
+    </div>
+</div>
