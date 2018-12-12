@@ -6,6 +6,7 @@ import { AlertService } from './service/alert/alert.service';
 import { AuthService } from './service/auth/auth.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { CustomerService } from './service/customer/customer.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [
     AppGuardService,
     AlertService,
-    AuthService
+    AuthService,
+    CustomerService
   ]
 })
 export class SharedModule { }
