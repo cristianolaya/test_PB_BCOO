@@ -8,6 +8,7 @@
         </div>
         <div class="card-text">
         <div class="price text-right">
+                <div class="title" *ngIf="type === 'CUENTAS'">Saldo actual</div>
             <div class="title" *ngIf="type !== 'CUENTAS'">Pago total</div>
             <div class="amount">{{product.amount  | currency}}</div>
         </div>
