@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
           type: 'DDA',
           name: 'Cuenta corriente',
           number: '2345 5674 2365 2342',
-          amount: 1300000.00
+          amount: -1300000.00
         }
       ]
     },
