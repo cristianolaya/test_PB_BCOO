@@ -19,7 +19,8 @@ import { JwtInterceptor } from './shared/service/helpers/jwt.interceptor';
     AppRoutingModule,
     PagesModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   providers: [
     {
