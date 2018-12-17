@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AlertComponent } from './alert.component';
+import { SharedModule } from '../../shared.module';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('AlertComponent', () => {
   let component: AlertComponent;
@@ -8,18 +10,13 @@ describe('AlertComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlertComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
+      imports: [ SharedModule, RouterTestingModule ]
+    });
     fixture = TestBed.createComponent(AlertComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  }));
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should create the alert component', () => {
+    expect(component).toBeDefined();
   });
 });

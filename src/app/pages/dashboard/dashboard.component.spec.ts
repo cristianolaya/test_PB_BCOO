@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DashboardComponent } from './dashboard.component';
+import {CardComponent} from './components/card/card.component';
+import {SharedModule} from '../../shared/shared.module';
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -8,18 +10,15 @@ describe('DashboardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ]
-    })
-    .compileComponents();
-  }));
+      imports: [SharedModule],
+      declarations: [ DashboardComponent, CardComponent ]
+    });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(DashboardComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  }));
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should create the dashboard component', () => {
+    expect(component).toBeDefined();
   });
 });

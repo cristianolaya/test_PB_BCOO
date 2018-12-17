@@ -23,7 +23,8 @@ registerLocaleData(localeCol);
     AppRoutingModule,
     PagesModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   providers: [
     {
