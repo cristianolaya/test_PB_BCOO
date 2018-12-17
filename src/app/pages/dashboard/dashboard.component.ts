@@ -38,12 +38,12 @@ export class DashboardComponent implements OnInit {
           number: '**** **** **** 8745',
           amount: 300000.00
         },
-        {
+        /*{
           type: 'mastercard',
           name: 'Tarjeta de crédito',
           number: '**** **** **** 8743',
           amount: 130000.20
-        }
+        }*/
       ]
     }
   ];
